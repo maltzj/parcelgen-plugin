@@ -67,10 +67,3 @@ class ParcelgenGenerator extends DefaultTask {
 		}
 	}
 }
-
-task parcelGenerator(type: ParcelgenGenerator) {
-	parcelsDir =  "." 
-	parcelSourcesDir = project.file(projectDir.getAbsolutePath() +
-		"/src/main/java/com/yelp/parcelgen/") 
-}
-
